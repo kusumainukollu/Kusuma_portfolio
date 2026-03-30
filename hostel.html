@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hostel Attendance System | Project Detail</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+          sans-serif;
+        background: radial-gradient(circle at top, #111827, #020617);
+        color: #e5e7eb;
+      }
+
+      main {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 3rem 1.5rem 4rem;
+      }
+
+      a {
+        color: #e5e7eb;
+      }
+
+      a:hover {
+        color: #22d3ee;
+      }
+
+      .top-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 1.5rem;
+        border-bottom: 1px solid rgba(55, 65, 81, 0.7);
+        background: rgba(15, 23, 42, 0.9);
+      }
+
+      .top-bar-title {
+        font-weight: 600;
+      }
+
+      .btn-small {
+        padding: 0.35rem 0.9rem;
+        border-radius: 999px;
+        border: 1px solid rgba(148, 163, 184, 0.7);
+        background: transparent;
+        color: #e5e7eb;
+        font-size: 0.8rem;
+        text-decoration: none;
+      }
+
+      .btn-small:hover {
+        border-color: #22d3ee;
+        color: #22d3ee;
+      }
+
+      .btn-primary {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.45rem 1.1rem;
+        border-radius: 999px;
+        background: linear-gradient(135deg, #6366f1, #22d3ee);
+        color: #f9fafb;
+        text-decoration: none;
+        font-size: 0.85rem;
+        border: none;
+        cursor: pointer;
+      }
+
+      .hero {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      .hero h1 {
+        margin: 0 0 0.4rem;
+        font-size: 1.8rem;
+      }
+
+      .meta {
+        font-size: 0.85rem;
+        color: #9ca3af;
+      }
+
+      .grid-2 {
+        display: grid;
+        gap: 1.5rem;
+      }
+
+      @media (min-width: 800px) {
+        .grid-2 {
+          grid-template-columns: minmax(0, 2fr) minmax(0, 1.3fr);
+        }
+      }
+
+      .card {
+        background: rgba(15, 23, 42, 0.95);
+        border-radius: 18px;
+        border: 1px solid rgba(55, 65, 81, 0.9);
+        padding: 1.2rem 1.4rem;
+        font-size: 0.9rem;
+        box-shadow: 0 18px 45px rgba(15, 23, 42, 0.9);
+      }
+
+      .card h2,
+      .card h3 {
+        margin-top: 0;
+      }
+
+      .list-dots {
+        padding-left: 1.1rem;
+        margin: 0.4rem 0 0;
+      }
+
+      .list-dots li {
+        margin-bottom: 0.25rem;
+      }
+
+     .screenshots {
+  display: grid;
+  gap: 1rem;
+}
+
+.screenshot {
+  background: radial-gradient(circle at top, #1f2937, #020617);
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(55, 65, 81, 0.9);
+}
+
+.screenshot img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.screenshot-caption {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.8rem;
+  color: #f2f4f8;
+}
+
+
+      .section-title {
+        margin-top: 2.4rem;
+        margin-bottom: 0.4rem;
+        font-size: 1.1rem;
+      }
+
+      .section-sub {
+        font-size: 0.85rem;
+        color: #e6e7e9;
+        margin-bottom: 0.8rem;
+      }
+
+      .footer-note {
+        margin-top: 2rem;
+        font-size: 0.8rem;
+        color: #edeff1;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="top-bar">
+      <div class="top-bar-title">Hostel Attendance System — Project Detail</div>
+      <div style="display: flex; gap: 0.6rem;">
+        <a href="index.html#projects" class="btn-small">← Back to Portfolio</a>
+        <a
+          href="https://github.com/kusumainukollu/Hostel-Attendance-system"
+          target="_blank"
+          rel="noreferrer noopener"
+          class="btn-primary"
+        >
+          View on GitHub
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Hostel Attendance System</h1>
+        <p class="meta">
+          Role: Full Stack Developer • Tech: PHP, MySQL, HTML, CSS, JavaScript
+        </p>
+      </section>
+
+      <section class="grid-2">
+        <article class="card">
+          <h2>Overview</h2>
+          <p>
+            A web-based attendance and leave management system for hostel students that digitizes
+            manual registers and paper-based workflows. The system enables students and
+            administrators to log attendance, manage leave requests, and view reports from a single
+            interface.
+          </p>
+
+          <h3>Problem</h3>
+          <p>
+            Hostels often rely on physical registers and handwritten leave forms, which can lead to
+            errors, missing records, and delays in tracking student presence. It is also difficult
+            to quickly understand attendance trends or verify past data.
+          </p>
+
+          <h3>Solution</h3>
+          <p>
+            I designed and built an online platform where students can view attendance records, submit
+            leave requests, and track approval status, while administrators can mark attendance, review records,
+            approve or reject leaves, and generate summary reports in real time all this happens with a secure login credentials.
+          </p>
+        </article>
+
+        <aside class="card">
+          <h3>My Responsibilities</h3>
+          <ul class="list-dots">
+            <li>Designed the database schema for Registerations, attendance , leave records and contact queries .</li>
+            <li>Implemented core PHP logic for attendance and leave workflows.</li>
+            <li>Created responsive UI using HTML, CSS, and JavaScript.</li>
+            <li>Handled role-based access for students and admins.</li>
+            <li>Tested flows, fixed bugs, and improved UX based on feedback.</li>
+          </ul>
+          <h3>Tech Stack</h3>
+          <p>PHP, MySQL, HTML, CSS, JavaScript</p>
+        </aside>
+      </section>
+
+      <section>
+        <h2 class="section-title">Key Features</h2>
+        <p class="section-sub">Core modules and functionality in the system.</p>
+        <div class="grid-2">
+          <div class="card">
+            <h3>Attendance Management</h3>
+            <ul class="list-dots">
+              <li>Daily attendance marking for hostel students.</li>
+              <li>View current day and historical attendance records.</li>
+
+              <li>Highlight absent students and patterns over time.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Leave Workflow & RBAC</h3>
+            <ul class="list-dots">
+              <li>Students submit leave requests with dates and reasons.</li>
+              <li>Admins approve or reject requests from their dashboard.</li>
+              <li>Role-based access control separates student and admin views.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Screenshots</h2>
+        <p class="section-sub">
+          Replace the placeholder images with your real screenshots (UI pages from the system).
+        </p>
+        <div class="screenshots">
+          <!-- Screenshot 1 -->
+          <div class="screenshot">
+            <img src="st1.png" alt="Hostel System Dashboard" />
+            <div class="screenshot-caption">
+              The home page of students Dashboard where student can know about the hostels, And its facilities.
+            </div>
+          </div>
+          <!-- Screenshot 2 -->
+          <div class="screenshot">
+            <img src="st2.png" alt="Attendance Page" />
+            <div class="screenshot-caption">
+              This is the features module of student where they can view the attendance reports generated by the admins here it contains Monthly attendance in bar graph and Weekly attendance in pie chart and daily attendance in tabular format with export csv option.
+            </div>
+          </div>
+          <!-- Screenshot 3 -->
+          <div class="screenshot">
+            <img src="st4.png" alt="Leave Request Page" />
+            <div class="screenshot-caption">
+              This is the dashoboard of the students where they can view their details.
+            </div>
+          </div>
+          <div class="screenshot">
+            <img src="st5.png" alt="Leave Request Page" />
+            <div class="screenshot-caption">
+              This is the dashoboard of the students where they can Apply for leave request view their leave period , export csv and filter their attendance based on daily, Monthly, Weekly and absent and present.
+            </div>
+          </div>
+          <div class="screenshot">
+            <img src="st6.png" alt="Leave Request Page" />
+            <div class="screenshot-caption">
+              This is the dashoboard of the students where they can Contact to the admins regarding their queries.
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="screenshot">
+            <img src="wr1.png" alt="Leave Request Page" />
+            <div class="screenshot-caption">
+              The home page of students Dashboard where student can know about the hostels, And its facilities.
+            </div>
+          </div>
+          <div class="screenshot">
+            <img src="wr2.png" alt="Leave Request Page" />
+            <div class="screenshot-caption">
+              This is the dashoboard of the students where they can mark attendance for the students and view the respective Blocks.
+            </div>
+          </div>
+          <div class="screenshot">
+            <img src="wr3.png" alt="Leave Request Page" />
+            <div class="screenshot-caption">
+              This is the dashoboard of the admins where they can view their details.
+            </div>
+          </div>
+          <div class="screenshot">
+            <img src="wr4.png" alt="Leave Request Page" />
+            <div class="screenshot-caption">
+              This is the dashoboard of the warden where they can Approve leave, reject  requests and there is filtering option where admins can view daily, weekly, and monthly along with absent and present records.There is an option to export Csv.
+            </div>
+          </div>
+          <div class="screenshot">
+            <img src="wr5.png" alt="Leave Request Page" />
+            <div class="screenshot-caption">
+              This is the dashoboard of the warden where they can View the contact queries raised by the students and they can reply to the students regarding their queries.
+          </div>
+
+      <section>
+        <h2 class="section-title">Challenges & Learnings</h2>
+        <div class="grid-2">
+          <div class="card">
+            <h3>Challenges</h3>
+            <ul class="list-dots">
+              <li>Designing a database schema that connects attendance and leave data cleanly.</li>
+              <li>Implementing secure session handling and role-based access control.</li>
+              <li>Keeping the UI simple for non-technical hostel staff.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>What I Learned</h3>
+            <ul class="list-dots">
+              <li>Better understanding of PHP–MySQL integration and CRUD operations.</li>
+              <li>Experience with authentication, authorization, and session management.</li>
+              <li>Improved my skills in designing admin dashboards and student flows.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <p class="footer-note">
+        Full source code and setup instructions:
+        <a href="https://github.com/kusumainukollu/Hostel-Attendance-system" target="_blank" rel="noreferrer noopener">
+          GitHub Repository
+        </a>
+      </p>
+    </main>
+  </body>
+</html>
