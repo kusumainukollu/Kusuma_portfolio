@@ -242,15 +242,17 @@ main {
 .hero-photo-card {
   position: relative;
   width: 220px;
-  height: 220px;
+  height: auto;          /* was fixed 220px – change to auto */
   border-radius: 32px;
   border: 1px solid rgba(148, 163, 184, 0.6);
   background: radial-gradient(circle at top, #f9fafc, #5adefc 40%, #f8f9fa);
-  padding: 1.5rem 1rem 2.4rem;
+  padding: 1.5rem 1rem 1.4rem;
   display: flex;
+  flex-direction: column; /* stack photo + label vertically */
   align-items: center;
   justify-content: center;
 }
+
 
 .hero-photo {
   width: 150px;
@@ -276,15 +278,7 @@ main {
 
 
 .hero-photo-label {
-  position: absolute;
-  bottom: 0.7rem;
-  left: 1rem;
-  right: 1rem;
-  padding: 0.35rem 0.7rem;
-  border-radius: 999px;
-  background: rgba(15, 23, 42, 0.9);
-  border: 1px solid rgba(55, 65, 81, 0.8);
-  font-size: 0.7rem;
+  margin-top: 0.75rem;
   text-align: center;
 }
 
